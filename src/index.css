@@ -4,36 +4,6 @@ body {
     padding-left: 40px;
 }
 
-.menu { 
-display: grid;
-align-items: center;
-grid-template-columns: 200px 1fr;
-column-gap: 50px;
-margin-left: 50px;
-}
 
-.logo {
-  width:200px;
-}
 
-li {
-  font-size: 65px;
-}
 
-.nav-list {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 100px;
-    
-}
-
-.nav-link {
-    display: block;
-    margin: 10px;
-    padding: 30px;
-}
-
-.
