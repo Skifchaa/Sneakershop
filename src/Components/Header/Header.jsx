@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Header.module.css';
 
-const Header = () => {
+export const Header = () => {
     return (
         <div className='header'>
           <div className={classes.menu}>  
@@ -18,4 +18,3 @@ const Header = () => {
         </div>)
 }
 
-export default Header;
