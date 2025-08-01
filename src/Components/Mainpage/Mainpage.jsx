@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './Mainpage.module.css';
 import Comment from './Comments/Comment';
 
-const Mainpage = () => {
+const Mainpage = (props) => {
   return (
     <div>
       <section className='content'>
@@ -24,9 +24,9 @@ const Mainpage = () => {
         <button>Remove</button>
       </div>
       <div className={classes.comment}>
-        <Comment message='Суперски' count='10'/>
-        <Comment message='Здоровски' count='15'/>
-        <Comment message='Топчик' count='20'/>
+        <Comment message='Суперски' likesCount='10'/>
+        <Comment message='Здоровски' likesCount='15'/>
+        <Comment message='Топчик' likesCount='20'/>
       </div>
 
 
@@ -35,4 +35,4 @@ const Mainpage = () => {
   )
 }
 
-export default Mainpage;
+export default Mainpage; 

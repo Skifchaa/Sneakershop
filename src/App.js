@@ -1,12 +1,15 @@
 import './App.css';
-import Header from './Components/Header';
-import Mainpage from './Components/Mainpage';
+import Header from './Components/Header/Header';
+import Mainpage from './Components/Mainpage/Mainpage';
+import Brands from './Components/Brands/Brands';
+
 function App() {
   return (
-  <div>
-    <Header />
-    <Mainpage />
-  </div>
+    <div>
+      <Header />
+      {/*<Mainpage />*/}
+      <Brands />
+    </div>
   );
 }
 

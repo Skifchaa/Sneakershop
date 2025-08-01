@@ -8,7 +8,7 @@ const Comment = (props) => {
       <img src='https://sneg.top/uploads/posts/2023-06/1687524854_sneg-top-p-logotip-avatarka-krasivo-47.jpg' />
       {props.message}
       <div>
-        <span>{props.count}</span>
+        <span>like</span> {props.likesCount}
       </div>
     </div>
 
