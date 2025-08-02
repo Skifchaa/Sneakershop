@@ -1,8 +1,8 @@
 import React from 'react'
-import classes from './Mainpage.module.css';
+import classes from './NewProducts.module.css';
 import Comment from './Comments/Comment';
 
-const Mainpage = (props) => {
+export const NewProducts = (props) => {
   return (
     <div>
       <section className='content'>
@@ -35,4 +35,3 @@ const Mainpage = (props) => {
   )
 }
 
-export default Mainpage; 
