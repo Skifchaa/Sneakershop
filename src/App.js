@@ -5,7 +5,7 @@ import Brands from './Components/Brands/Brands';
 import Mens from './Components/Mens/Mens';
 import Womens from './Components/Womens/Womens';
 import Accessories from './Components/Accessories/Accessories';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
