@@ -35,12 +35,14 @@ li {
 
 .navlist a {
   text-decoration: none;
+  
 }
 
-.navlist a:visited {
-  color: black;
+.link {
+  color:black;
 }
 
-.navlist a:focus {
-  color: orange
+.activeLink {
+  color: gold;
 }
+
