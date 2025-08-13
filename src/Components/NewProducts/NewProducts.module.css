@@ -8,6 +8,7 @@
   justify-items: center;
   margin: 0;
   padding: 0;
+  
 
 }
 
@@ -22,6 +23,7 @@
 }
 
 
-.item img {
-  width:50px;
+a {  
+    text-decoration: none;  
+    color: black;  
 }
