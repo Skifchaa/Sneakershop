@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './NewProducts.module.css';
 import Comment from './Comments/Comment';
+import { ProductItem } from './Products/Product';
 
 export const NewProducts = (props) => {
   
@@ -52,13 +53,7 @@ export const NewProducts = (props) => {
   )
 }
 
-const ProductItem = (props) => {
-  return (
-    <li className={classes.snkr}>
-      <img className={classes.shoes} src={props.img} alt="кроссовок" />
-    </li>
-  )
-}
+
 
 /* <li className={classes.snkr}><img className={classes.shoes} src='https://superstep.ru/upload/resize_cache/iblock/9d3/iq70235n21xg7qja88zfj41ncwibmwhm/2160_2160_1/NKHJ4497400.webp'></img></li>
 <li className={classes.snkr}><img className={classes.shoes} src='https://superstep.ru/upload/resize_cache/iblock/e73/kl7lkrah49y0iolkkqmeztrqnbmda0y8/2160_2160_1/AN8125177194.webp'></img></li>

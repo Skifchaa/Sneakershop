@@ -12,12 +12,10 @@ const Mens = (props) => {
         { id: 3, title: 'Adidas', subtitle: 'Кроссовки Adidas', img: 'https://superstep.ru/upload/resize_cache/iblock/7ef/utdap6y4n10hz7weemw7d9k8ejelupfc/2160_2160_1/ADB75806R00.webp' }
     ]
 
-    let mensElements = [
-        <NavLink to={"/Mens/" + mensData[0].id}><ItemCard title={mensData[0].title} subtitle={mensData[0].subtitle} img={mensData[0].img} id={mensData[0].id} /></NavLink>,
-        <NavLink to={"/Mens/" + mensData[1].id}><ItemCard title={mensData[1].title} subtitle={mensData[1].subtitle} img={mensData[1].img} id={mensData[1].id} /></NavLink>,
-        <NavLink to={"/Mens/" + mensData[2].id}><ItemCard title={mensData[2].title} subtitle={mensData[2].subtitle} img={mensData[2].img} id={mensData[2].id} /></NavLink>
+    let mensElements = mensData.map(men => <NavLink to={"/Mens/" + men.id}><ItemCard title={men.title} subtitle={men.subtitle} img={men.img} id={men.id} /></NavLink> ) ;
+       
 
-    ]
+    
 
 
     return (
@@ -39,7 +37,12 @@ export default Mens;
               <NavLink to={"/Mens/" + mensData[0].id}><ItemCard title={mensData[0].title} subtitle={mensData[0].subtitle} img={mensData[0].img} id={mensData[0].id} /></NavLink> 
               <NavLink to={"/Mens/" + mensData[1].id}><ItemCard title={mensData[1].title} subtitle={mensData[1].subtitle} img={mensData[1].img} id={mensData[1].id}/></NavLink> 
               <NavLink to={"/Mens/" + mensData[2].id}><ItemCard title={mensData[2].title} subtitle={mensData[2].subtitle} img={mensData[2].img} id={mensData[2].id} /></NavLink> 
+  let mensElements = [
+        <NavLink to={"/Mens/" + mensData[0].id}><ItemCard title={mensData[0].title} subtitle={mensData[0].subtitle} img={mensData[0].img} id={mensData[0].id} /></NavLink>,
+        <NavLink to={"/Mens/" + mensData[1].id}><ItemCard title={mensData[1].title} subtitle={mensData[1].subtitle} img={mensData[1].img} id={mensData[1].id} /></NavLink>,
+        <NavLink to={"/Mens/" + mensData[2].id}><ItemCard title={mensData[2].title} subtitle={mensData[2].subtitle} img={mensData[2].img} id={mensData[2].id} /></NavLink>
 
+    ]
 
 
 */
