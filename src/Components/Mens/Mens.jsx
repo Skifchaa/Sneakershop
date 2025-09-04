@@ -2,15 +2,11 @@ import React from 'react'
 import classes from './Mens.module.css'
 import { NavLink } from 'react-router-dom'
 import { ItemCard } from './ItemCard/ItemCard'
-
+import { mensData } from '../../index'
 
 const Mens = (props) => {
 
-    let mensData = [
-        { id: 1, title: 'New Balance', subtitle: 'Кроссовки New Balance', img: 'https://superstep.ru/upload/resize_cache/iblock/f2d/y82r5rgjbazfz1bm3v2d0dnidw3q96gd/2160_2160_1/NBU9060ERA.webp' },
-        { id: 2, title: 'Nike', subtitle: 'Кроссовки Nike', img: 'https://superstep.ru/upload/resize_cache/iblock/11d/skmajh3dxqqmq8wingkjqen7p6xo6fxk/2160_2160_1/NKDV0833111.webp' },
-        { id: 3, title: 'Adidas', subtitle: 'Кроссовки Adidas', img: 'https://superstep.ru/upload/resize_cache/iblock/7ef/utdap6y4n10hz7weemw7d9k8ejelupfc/2160_2160_1/ADB75806R00.webp' }
-    ]
+  
 
     let mensElements = mensData.map(men => <NavLink to={"/Mens/" + men.id}><ItemCard title={men.title} subtitle={men.subtitle} img={men.img} id={men.id} /></NavLink> ) ;
        
