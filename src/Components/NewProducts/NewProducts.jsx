@@ -2,17 +2,16 @@ import React from 'react'
 import classes from './NewProducts.module.css';
 import Comment from './Comments/Comment';
 import { ProductItem } from './Products/Product';
-import { newProductsData } from '../../index';
-import { commentData } from '../../index';
+
 
 export const NewProducts = (props) => {
   
 
   
  
-  let newProductsElements = newProductsData.map(Product => <ProductItem img={Product.img} /> ) ;
+  let newProductsElements = props.newProductsData.map(product => <ProductItem img={product.img} /> ) ;
  
-  let commentElements = commentData.map(comment => <Comment message={comment.message} likesCount={comment.likesCount} /> ) ;
+  let commentElements = props.commentData.map(comment => <Comment message={comment.message} likesCount={comment.likesCount} /> ) ;
   
   
   return (

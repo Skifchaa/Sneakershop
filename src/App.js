@@ -7,16 +7,18 @@ import Womens from './Components/Womens/Womens';
 import Accessories from './Components/Accessories/Accessories';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-function App() {
+function App(props) {
+ 
+
   return (
     <BrowserRouter>
     <div>
       <Header />
       <div className='content'>
       <Routes>
-      <Route path='/NewProducts' element={<NewProducts />} />
+      <Route path='/NewProducts' element={<NewProducts newProductsData={props.newProductsData} commentData={props.commentData}   />} />
       <Route path='/Brands' element={<Brands />} />
-      <Route path='/Mens' element={<Mens />} />
+      <Route path='/Mens' element={<Mens mensData={props.mensData} />} />
       <Route path='/Womens' element={<Womens />} />
       <Route path='/Accessories' element={<Accessories />} />
       </Routes>

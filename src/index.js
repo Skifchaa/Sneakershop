@@ -6,14 +6,14 @@ import reportWebVitals from './reportWebVitals';
 
 
 
-   export let mensData = [
+ let mensData = [
         { id: 1, title: 'New Balance', subtitle: 'Кроссовки New Balance', img: 'https://superstep.ru/upload/resize_cache/iblock/f2d/y82r5rgjbazfz1bm3v2d0dnidw3q96gd/2160_2160_1/NBU9060ERA.webp' },
         { id: 2, title: 'Nike', subtitle: 'Кроссовки Nike', img: 'https://superstep.ru/upload/resize_cache/iblock/11d/skmajh3dxqqmq8wingkjqen7p6xo6fxk/2160_2160_1/NKDV0833111.webp' },
         { id: 3, title: 'Adidas', subtitle: 'Кроссовки Adidas', img: 'https://superstep.ru/upload/resize_cache/iblock/7ef/utdap6y4n10hz7weemw7d9k8ejelupfc/2160_2160_1/ADB75806R00.webp' }
     ]
 
   
-    export let newProductsData = [
+   let newProductsData = [
     {img:'https://superstep.ru/upload/resize_cache/iblock/9d3/iq70235n21xg7qja88zfj41ncwibmwhm/2160_2160_1/NKHJ4497400.webp'},
     {img:'https://superstep.ru/upload/resize_cache/iblock/e73/kl7lkrah49y0iolkkqmeztrqnbmda0y8/2160_2160_1/AN8125177194.webp'},
     {img:'https://superstep.ru/upload/resize_cache/iblock/d29/j4w2uddggv3xmjb32v26mqy0f4swya2h/2160_2160_1/NBU1906RCB.webp'},
@@ -25,8 +25,7 @@ import reportWebVitals from './reportWebVitals';
     {img:'https://superstep.ru/upload/resize_cache/iblock/035/fbyk827z386kq8ohes4au0scdi3ohq5t/2160_2160_1/PM40174404.webp'}
 
   ]
-  
-  export let commentData = [
+ let commentData = [
     {message:'Суперски', likesCount:'10' },
     {message:'Здоровски', likesCount:'15' },
     {message:'Топчик', likesCount:'20'}
@@ -40,7 +39,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App mensData={mensData} newProductsData={newProductsData} commentData={commentData}/>
   </React.StrictMode>
 );
 
