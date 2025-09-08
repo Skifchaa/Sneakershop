@@ -8,20 +8,7 @@
   justify-items: center;
   margin: 0;
   padding: 0;
+  
 
 }
 
-.shoes {
-  width: 300px;
-  height: 300px;
-
-}
-
-.snkr {
-  list-style-type: none;
-}
-
-
-.item img {
-  width:50px;
-}

@@ -1,3 +1,17 @@
-.mens {
-  font-size: 100px;
+.product {
+  display: block;
 }
+
+
+.products {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 400px 400px 400px;
+}
+
+
+a {  
+    text-decoration: none;  
+    color: black;  
+}
+
