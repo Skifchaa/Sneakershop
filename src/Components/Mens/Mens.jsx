@@ -8,7 +8,7 @@ const Mens = (props) => {
 
     
 
-    let mensElements = props.mensData.map(men => <NavLink to={"/Mens/" + men.id}><ItemCard title={men.title} subtitle={men.subtitle} img={men.img} id={men.id} /></NavLink> ) ;
+    let mensElements = props.state.mensData.map(men => <NavLink to={"/Mens/" + men.id}><ItemCard title={men.title} subtitle={men.subtitle} img={men.img} id={men.id} /></NavLink> ) ;
        
 
     

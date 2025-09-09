@@ -7,6 +7,7 @@ import Womens from './Components/Womens/Womens';
 import Accessories from './Components/Accessories/Accessories';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+
 function App(props) {
  
 
@@ -16,9 +17,9 @@ function App(props) {
       <Header />
       <div className='content'>
       <Routes>
-      <Route path='/NewProducts' element={<NewProducts newProductsData={props.newProductsData} commentData={props.commentData}   />} />
+      <Route path='/NewProducts' element={<NewProducts state={props.state.newProductsPage} />} />
       <Route path='/Brands' element={<Brands />} />
-      <Route path='/Mens' element={<Mens mensData={props.mensData} />} />
+      <Route path='/Mens' element={<Mens state={props.state.mensPage} />} />
       <Route path='/Womens' element={<Womens />} />
       <Route path='/Accessories' element={<Accessories />} />
       </Routes>

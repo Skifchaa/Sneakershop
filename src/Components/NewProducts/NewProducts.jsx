@@ -9,9 +9,9 @@ export const NewProducts = (props) => {
 
   
  
-  let newProductsElements = props.newProductsData.map(product => <ProductItem img={product.img} /> ) ;
+  let newProductsElements = props.state.newProductsData.map(product => <ProductItem img={product.img} /> ) ;
  
-  let commentElements = props.commentData.map(comment => <Comment message={comment.message} likesCount={comment.likesCount} /> ) ;
+  let commentElements = props.state.commentData.map(comment => <Comment message={comment.message} likesCount={comment.likesCount} /> ) ;
   
   
   return (
