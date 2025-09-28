@@ -25,8 +25,15 @@ let state = {
             { message: 'Топчик', likesCount: '20' }
 
         ]
-    }
+    },
+    accessoriesPage: {
+        accessoriesData: [
+    {id:1, title:'Anta', subtitle:'Рюкзак Anta BAG', img:'https://superstep.ru/upload/resize_cache/iblock/5c4/bftsrk7cds7kxsodubaspafziqzbxm13/2160_2160_1/AN8925181532.webp'},
+    {id:2, title:'Lacoste', subtitle:'Кепка CAP LACOSTE', img:'https://superstep.ru/upload/resize_cache/iblock/1a9/v1hwle7krzlxpe2su1n6ge5a8ev94yl2/2160_2160_1/RK0440166.webp'},
+    {id:3, title:'Anta', subtitle:'Шапка Anta CAMPUS Beanie', img:'https://superstep.ru/upload/resize_cache/iblock/810/ut3eesnwnr3f1y692ocfq8hd1m53ug3r/2160_2160_1/AN8924485333.webp'}
+]
 
+    }
 
 }
 
