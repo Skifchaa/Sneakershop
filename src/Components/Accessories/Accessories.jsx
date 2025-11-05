@@ -28,3 +28,4 @@ let accessoriesElements = props.state.accessoriesData.map(accessories => <NavLin
 }
 
 export default Accessories;
+

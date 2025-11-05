@@ -13,7 +13,14 @@ export const NewProducts = (props) => {
  
   let commentElements = props.state.commentData.map(comment => <Comment message={comment.message} likesCount={comment.likesCount} /> ) ;
   
+  let addComment = () => {
+    debugger;
+    let text = newCommentElement.current.value;
+    alert ('Hey') ;
+  }
   
+  let newCommentElement = React.createRef();
+
   return (
     <div>
       <section className='content'>
@@ -22,8 +29,8 @@ export const NewProducts = (props) => {
         </ul>
       </section>
       <div>
-        <textarea></textarea>
-        <button>Add comment</button>
+        <textarea ref={newCommentElement}></textarea>
+        <button onClick={ addComment }>Add comment</button>
         <button>Remove</button>
       </div>
       <div className={classes.comment}>
