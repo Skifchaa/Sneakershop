@@ -16,7 +16,7 @@ export const NewProducts = (props) => {
   let addComment = () => {
     debugger;
     let text = newCommentElement.current.value;
-    alert ('Hey') ;
+    props.addComment (text) ;
   }
   
   let newCommentElement = React.createRef();

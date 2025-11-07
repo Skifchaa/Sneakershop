@@ -20,9 +20,9 @@ let state = {
 
         ],
         commentData: [
-            { message: 'Суперски', likesCount: '10' },
-            { message: 'Здоровски', likesCount: '15' },
-            { message: 'Топчик', likesCount: '20' }
+            {id: 1, message: 'Суперски', likesCount: '10' },
+            {id: 2, message: 'Здоровски', likesCount: '15' },
+            {id: 3, message: 'Топчик', likesCount: '20' }
 
         ]
     },
@@ -36,5 +36,19 @@ let state = {
     }
 
 }
+
+export let addComment = (postComment) => {
+    debugger;
+    let newComment = {
+      id:4,
+      message: postComment,
+      likesCount: 0
+    };
+
+    state.newProductsPage.commentData.push (newComment) ;
+}
+
+
+
 
 export default state;
