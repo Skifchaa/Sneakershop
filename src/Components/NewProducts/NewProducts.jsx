@@ -14,9 +14,9 @@ export const NewProducts = (props) => {
   let commentElements = props.state.commentData.map(comment => <Comment message={comment.message} likesCount={comment.likesCount} /> ) ;
   
   let addComment = () => {
-    debugger;
     let text = newCommentElement.current.value;
     props.addComment (text) ;
+    newCommentElement.current.value = "";
   }
   
   let newCommentElement = React.createRef();

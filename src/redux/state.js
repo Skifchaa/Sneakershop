@@ -1,3 +1,5 @@
+import { rerendrerEntireTree } from "../render";
+
 let state = {
     mensPage: {
         mensData: [
@@ -37,15 +39,16 @@ let state = {
 
 }
 
-export let addComment = (postComment) => {
+export let addComment = (commentMessage) => {
     debugger;
     let newComment = {
       id:4,
-      message: postComment,
+      message: commentMessage,
       likesCount: 0
     };
 
     state.newProductsPage.commentData.push (newComment) ;
+    rerendrerEntireTree (state);
 }
 
 
