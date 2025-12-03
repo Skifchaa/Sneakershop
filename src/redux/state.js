@@ -1,5 +1,8 @@
 import { rerendrerEntireTree } from "../render";
 
+
+
+
 let state = {
     mensPage: {
         mensData: [
@@ -26,7 +29,8 @@ let state = {
             {id: 2, message: 'Здоровски', likesCount: '15' },
             {id: 3, message: 'Топчик', likesCount: '20' }
 
-        ]
+        ],
+        newCommentText:'it-kamasutra.com'
     },
     accessoriesPage: {
         accessoriesData: [
@@ -38,20 +42,25 @@ let state = {
     }
 
 }
+window.state=state;
 
-export let addComment = (commentMessage) => {
+export let addComment = () => {
     debugger;
     let newComment = {
       id:4,
-      message: commentMessage,
+      message: state.newProductsPage.newCommentText,
       likesCount: 0
     };
 
     state.newProductsPage.commentData.push (newComment) ;
+    state.newProductsPage.NewCommentText= ' ';
     rerendrerEntireTree (state);
 }
 
-
+export let updateNewCommentText = (newText) => {
+    state.newProductsPage.newCommentText = newText ;
+    rerendrerEntireTree (state);
+}
 
 
 export default state;

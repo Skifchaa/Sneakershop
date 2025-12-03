@@ -17,7 +17,7 @@ function App(props) {
       <Header />
       <div className='content'>
       <Routes>
-      <Route path='/NewProducts' element={<NewProducts state={props.state.newProductsPage} addComment={props.addComment} />} />
+      <Route path='/NewProducts' element={<NewProducts newProductsPage={props.state.newProductsPage} addComment={props.addComment} updateNewCommentText={props.updateNewCommentText}  />} />
       <Route path='/Brands' element={<Brands />} />
       <Route path='/Mens' element={<Mens state={props.state.mensPage} />} />
       <Route path='/Womens' element={<Womens />} />

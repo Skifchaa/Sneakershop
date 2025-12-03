@@ -9,17 +9,21 @@ export const NewProducts = (props) => {
 
   
  
-  let newProductsElements = props.state.newProductsData.map(product => <ProductItem img={product.img} /> ) ;
+  let newProductsElements = props.newProductsPage.newProductsData.map(product => <ProductItem img={product.img} /> ) ;
  
-  let commentElements = props.state.commentData.map(comment => <Comment message={comment.message} likesCount={comment.likesCount} /> ) ;
+  let commentElements = props.newProductsPage.commentData.map(comment => <Comment message={comment.message} likesCount={comment.likesCount} /> ) ;
+
+  let newCommentElement = React.createRef();
   
   let addComment = () => {
-    let text = newCommentElement.current.value;
-    props.addComment (text) ;
-    newCommentElement.current.value = "";
+    props.addComment () ;
+    props.updateNewCommentText('');
   }
   
-  let newCommentElement = React.createRef();
+  let onCommentChange = () => {
+    let text = newCommentElement.current.value;
+    props.updateNewCommentText(text);
+  }
 
   return (
     <div>
@@ -29,7 +33,7 @@ export const NewProducts = (props) => {
         </ul>
       </section>
       <div>
-        <textarea ref={newCommentElement}></textarea>
+        <textarea onChange={onCommentChange}  ref={newCommentElement} value={props.newProductsPage.newCommentText}/>
         <button onClick={ addComment }>Add comment</button>
         <button>Remove</button>
       </div>

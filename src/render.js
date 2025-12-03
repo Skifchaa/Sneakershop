@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter} from 'react-router-dom';
-import { addComment } from './redux/state';
+import { addComment, updateNewCommentText } from './redux/state';
 
 
 
@@ -17,7 +17,7 @@ export let rerendrerEntireTree = (state) => {
 root.render(
   <React.StrictMode>
      <BrowserRouter>
-    <App state={state} addComment={addComment} />
+    <App state={state} addComment={addComment} updateNewCommentText={updateNewCommentText} />
     </BrowserRouter>
   </React.StrictMode>
 );

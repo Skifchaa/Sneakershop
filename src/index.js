@@ -1,6 +1,5 @@
 import state from './redux/state';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { rerendrerEntireTree } from './render';
 
