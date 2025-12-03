@@ -7,6 +7,7 @@
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 400px 400px 400px;
+  text-align: center;
 }
 
 
@@ -14,4 +15,5 @@ a {
     text-decoration: none;  
     color: black;  
 }
+
 

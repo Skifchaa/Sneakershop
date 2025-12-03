@@ -2,13 +2,13 @@ import React from 'react'
 import classes from './Mens.module.css'
 import { NavLink } from 'react-router-dom'
 import { ItemCard } from './ItemCard/ItemCard'
-import { mensData } from '../../index'
+
 
 const Mens = (props) => {
 
-  
+    
 
-    let mensElements = mensData.map(men => <NavLink to={"/Mens/" + men.id}><ItemCard title={men.title} subtitle={men.subtitle} img={men.img} id={men.id} /></NavLink> ) ;
+    let mensElements = props.state.mensData.map(men => <NavLink to={"/Mens/" + men.id}><ItemCard title={men.title} subtitle={men.subtitle} img={men.img} id={men.id} /></NavLink> ) ;
        
 
     

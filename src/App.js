@@ -5,24 +5,27 @@ import Brands from './Components/Brands/Brands';
 import Mens from './Components/Mens/Mens';
 import Womens from './Components/Womens/Womens';
 import Accessories from './Components/Accessories/Accessories';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 
-function App() {
+
+function App(props) {
+ 
+
   return (
-    <BrowserRouter>
+    
     <div>
       <Header />
       <div className='content'>
       <Routes>
-      <Route path='/NewProducts' element={<NewProducts />} />
+      <Route path='/NewProducts' element={<NewProducts newProductsPage={props.state.newProductsPage} addComment={props.addComment} updateNewCommentText={props.updateNewCommentText}  />} />
       <Route path='/Brands' element={<Brands />} />
-      <Route path='/Mens' element={<Mens />} />
+      <Route path='/Mens' element={<Mens state={props.state.mensPage} />} />
       <Route path='/Womens' element={<Womens />} />
-      <Route path='/Accessories' element={<Accessories />} />
+      <Route path='/Accessories' element={<Accessories state={props.state.accessoriesPage} />} />
       </Routes>
       </div>
     </div>
-    </BrowserRouter>
+    
   );
 }
 
